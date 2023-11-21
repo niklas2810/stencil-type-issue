@@ -1,4 +1,4 @@
-# Reproductioon for Stencil Type Issue
+# Reproduction for Stencil Type Issue
 
 Sometimes, Stencil fails to generate the `dist/types` directory when using the SASS plugin and some special conditions apply (see issue or the `my-component.tsx` file).
 
@@ -18,4 +18,4 @@ Tested on both Windows and Linux (Alpine+Ubuntu) machines.
 1. Install dependencies: `npm i`.
 2. I've included a script to make the build process quicker: `python loop.py 10` (this builds the project 10 times and checks the types directory each time).
 
-Please note: The types are generated sometimes. In my experience, the chance for the types to not be generated is around 50%. All **breaking** cases always break in the first 5 attempts (usually in the first two), all **working** cases work at least 20 consecutive attempts. 
+Please note: The types are generated sometimes. In my experience, the chance for the types to not be generated is around 50%. All **breaking** cases usually break in the first 5 attempts, all **working** cases worked in at least 20 consecutive attempts. 
